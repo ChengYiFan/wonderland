@@ -65,7 +65,6 @@
 ## 工程化
 - 多项目共用node moudles如何做工作区间？
 - 如何监听git提交？
-- webpack优化2.5
 - webpack proxyTable
 
 ## 开放性

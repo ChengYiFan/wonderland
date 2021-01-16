@@ -1,8 +1,8 @@
 # my wonderland
 
 ## JS
-- this
-- 闭包，如何形成闭包
+- [this](https://github.com/ChengYiFan/wonderland/blob/main/JS/this.md)
+- [闭包，如何形成闭包](https://github.com/ChengYiFan/wonderland/blob/main/JS/closure.md)
 - 垃圾回收机制
 - 箭头函数
 - call、apply、bind区别
@@ -56,11 +56,15 @@
 - 手写promise.all
 - 数字千分位的实现
 
-## 框架
-- 简述mvvm实现原理，并分react和vue画出流程图。
+## React
 - react hooks 的优点？
 - redux 原理
 - contextAPI
+
+## 设计模式
+- 策略模式
+- [mvc、mvp、mvvm](https://github.com/ChengYiFan/wonderland/blob/main/DesignPatterns/mvc-mvp-mvvm.md)
+- 简述mvvm实现原理，并分react和vue画出流程图。
 
 ## 工程化
 - 多项目共用node moudles如何做工作区间？

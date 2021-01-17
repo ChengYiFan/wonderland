@@ -5,10 +5,10 @@
 - [闭包，如何形成闭包](https://github.com/ChengYiFan/wonderland/blob/main/JS/closure.md)
 - 垃圾回收机制
 - 箭头函数
-- call、apply、bind区别
-- 模块模式的理解，ES6模块模式与node.js模块模式的区别？
+- [call、apply、bind区别](http://yc-yue.top/article/51)
+- [模块模式的理解，ES6模块模式与node.js模块模式的区别？](https://github.com/ChengYiFan/wonderland/blob/main/JS/module.md)
 - 函数式编程
-- 如何理解纯函数，自己怎么构建纯函数？
+- [如何理解纯函数，自己怎么构建纯函数?](https://github.com/ChengYiFan/wonderland/blob/main/JS/pure-function.md)
 - 函数柯里化
 - 原型和原型链
 - 继承
@@ -18,7 +18,7 @@
 - ts解决了哪些问题？
 
 ## CSS
-- 盒模型
+- [盒模型](http://yc-yue.top/article/44)
 - BFC
 - 三栏布局
 - 媒体查询
@@ -50,21 +50,19 @@
 ## 手写
 - 手写bind
 - 手写deepClone
-- 手写杨辉三角
-- 手写防抖、节流
-- 手写new
+- [手写new、防抖、节流、杨辉三角](http://yc-yue.top/article/50)
 - 手写promise.all
 - 数字千分位的实现
 
 ## React
-- react hooks 的优点？
-- redux 原理
+- [react hooks 的优点？](https://github.com/ChengYiFan/wonderland/blob/main/React/hooks.md)
+- [redux 原理，如何触发状态更新到视图？](https://github.com/ChengYiFan/wonderland/blob/main/React/redux.md)
 - contextAPI
 
 ## 设计模式
 - 策略模式
 - [mvc、mvp、mvvm](https://github.com/ChengYiFan/wonderland/blob/main/DesignPatterns/mvc-mvp-mvvm.md)
-- 简述mvvm实现原理，并分react和vue画出流程图。
+- [简述mvvm实现原理，并分react和vue画出流程图](https://github.com/ChengYiFan/wonderland/blob/main/DesignPatterns/mvvm.md)。
 
 ## 工程化
 - 多项目共用node moudles如何做工作区间？

@@ -7,7 +7,7 @@
 - 箭头函数
 - [call、apply、bind区别](http://yc-yue.top/article/51)
 - [模块模式的理解，ES6模块模式与node.js模块模式的区别？](https://github.com/ChengYiFan/wonderland/blob/main/JS/module.md)
-- 函数式编程
+- [函数式编程](https://github.com/ChengYiFan/wonderland/blob/main/JS/functionProgram.md)
 - [如何理解纯函数，自己怎么构建纯函数?](https://github.com/ChengYiFan/wonderland/blob/main/JS/pure-function.md)
 - 函数柯里化
 - 原型和原型链
@@ -32,7 +32,7 @@
 
 ## 移动端
 - font-size: 10px如何实现
-- 移动端1px
+- 移动端1px如何实现
 - 媒体查询
 - 移动端click 300ms延迟的原因？
 
@@ -68,6 +68,7 @@
 - 多项目共用node moudles如何做工作区间？
 - 如何监听git提交？
 - webpack proxyTable
+- 理解Webpack tree shaking
 
 ## 开放性
 - 如何减少代码量但是增加代码的功能

@@ -34,7 +34,7 @@
 - font-size: 10px如何实现
 - 移动端1px如何实现
 - 媒体查询
-- 移动端click 300ms延迟的原因？
+- [移动端click 300ms延迟的原因？](ttps://github.com/ChengYiFan/wonderland/blob/main/Mobile/click300.md)
 
 ## 浏览器
 - http1.1 和 http2.0的区别

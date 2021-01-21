@@ -1,5 +1,5 @@
 ## Redux
-
+Redux 是 JavaScript 应用程序的状态容器，提供可预测的状态管理。
 
 ### 如何触发状态更新到视图？
 reducer是redux的三个核心概念之一，它指定了应用状态的变化如何响应 actions 并发送到 store。

@@ -9,12 +9,12 @@
 - [模块模式的理解，ES6模块模式与node.js模块模式的区别？](https://github.com/ChengYiFan/wonderland/blob/main/JS/module.md)
 - [函数式编程](https://github.com/ChengYiFan/wonderland/blob/main/JS/functionProgram.md)
 - [如何理解纯函数，自己怎么构建纯函数?](https://github.com/ChengYiFan/wonderland/blob/main/JS/pure-function.md)
-- 函数柯里化
+- [函数柯里化](https://github.com/ChengYiFan/wonderland/blob/main/JS/currying.md)
 - 原型和原型链
 - 继承
 - 浅拷贝和深拷贝
-- setTimeout和requestAnimationFrame
-- JS事件机制，事件循环
+- [setTimeout和requestAnimationFrame](https://github.com/ChengYiFan/wonderland/blob/main/JS/requestAnimationFrame.md)
+- [JS事件机制，事件循环](https://github.com/ChengYiFan/wonderland/blob/main/JS/eventLoop.md)
 - ts解决了哪些问题？
 
 ## CSS
@@ -54,6 +54,9 @@
 - 手写promise.all
 - 数字千分位的实现
 
+## 算法
+- [二分查找](https://github.com/ChengYiFan/wonderland/blob/main/Code/binary-search.md)
+
 ## React
 - [react hooks 的优点？](https://github.com/ChengYiFan/wonderland/blob/main/React/hooks.md)
 - [redux 原理，如何触发状态更新到视图？](https://github.com/ChengYiFan/wonderland/blob/main/React/redux.md)
@@ -67,6 +70,7 @@
 ## 工程化
 - 多项目共用node moudles如何做工作区间？
 - 如何监听git提交？
+- webpack 原理
 - webpack proxyTable
 - 理解Webpack tree shaking
 

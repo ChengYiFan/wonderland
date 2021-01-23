@@ -52,12 +52,24 @@
 - 手写deepClone
 - [手写new、防抖、节流、杨辉三角](http://yc-yue.top/article/50)
 - 手写promise.all
-- 数字千分位的实现
 
 ## 算法
 - [二分查找](https://github.com/ChengYiFan/wonderland/blob/main/Code/binary-search.md)
+- [数组去重]
+- 删除重复的字符
+- 连字符转成驼峰
+- [怎么用最优雅的方法给数字加千分位]()
+- 斐波那契
+- 求最大公约数
+- 验证一个数是否是素数
+- 二叉树自平衡
+- 判断链表是否成环
+- 判断词库里是否有某个词
+- 爬楼梯
+- 
 
 ## React
+- [react](https://github.com/ChengYiFan/wonderland/blob/main/React/react.md)
 - [react hooks 的优点？](https://github.com/ChengYiFan/wonderland/blob/main/React/hooks.md)
 - [redux 原理，如何触发状态更新到视图？](https://github.com/ChengYiFan/wonderland/blob/main/React/redux.md)
 - contextAPI
@@ -68,6 +80,7 @@
 - [简述mvvm实现原理，并分react和vue画出流程图](https://github.com/ChengYiFan/wonderland/blob/main/DesignPatterns/mvvm.md)。
 
 ## 工程化
+- webpack5的新特性
 - 多项目共用node moudles如何做工作区间？
 - 如何监听git提交？
 - webpack 原理

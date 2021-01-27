@@ -14,14 +14,29 @@
 - 继承
 - 浅拷贝和深拷贝
 - [setTimeout和requestAnimationFrame](https://github.com/ChengYiFan/wonderland/blob/main/JS/requestAnimationFrame.md)
-- [JS事件机制，事件循环](https://github.com/ChengYiFan/wonderland/blob/main/JS/eventLoop.md)
+- [JS事件循环](https://github.com/ChengYiFan/wonderland/blob/main/JS/eventLoop.md)
 - ts解决了哪些问题？
+- [DOM 事件机制]
 
 ## CSS
 - [盒模型](http://yc-yue.top/article/44)
 - BFC
 - 三栏布局
 - 媒体查询
+- 伪类和伪元素的区别
+伪类有UI伪类和结构化伪类，UI伪类会在元素处于某个状态时（比如鼠标悬停），为该元素应用css样式。结构化伪类会在标记中存在某种结构上的关系时（如某个元素时一组元素中的第一个或最后一个），为相应元素应用css样式。
+**UI伪类：**
+链接伪类：:link,:visited,:hover,:active。
+focus伪类：e:focus。
+target伪类: #more_info:target。
+**结构化伪类：**
+:first-child,:last-child
+:nth-child
+伪元素是文档中若有实无的元素。
+::first-letter
+::first-line
+::before,::after
+- 浮动与清除
 - 纯css实现一个宽度自适应，高度固定为宽度2倍的div
 
 ## HTML
@@ -45,12 +60,41 @@
 ## 性能优化
 - 如何实现一个单点登录？
 - 项目里具体做了哪些优化？
-- 性能优化的方法
+- [性能优化的方法]()
+性能优化初步原则
+减小代码量
+减小请求数
+最大化利用浏览器缓存
+
+这三条原则永远是一切优化的前提
+编码阶段：组件复用，
+更新阶段：PureComponent/memo/immutable
+状态管理：reselect/useSelector等redux状态管理性能优化
+路由：lazyloading
+CDN 的使用
+打包阶段：
+  webpack打包优化，压缩JS、CSS代码，
+  提取 chunk 中使用的公共库（能为chunk代码节约近1/3的代码量），
+  生产模式（pro）下第三方库使用已压缩版本，
+  优化 babel-ployfill，结合 babel-preset-env 实现兼容按需加载，比使用es2015能节约近半的大小，
+  开启dll，优化打包速度，
+  去除lodash未引入的模块，需要和babel-plugin-lodash插件配合使用
+  性能分析：spead-measure-webpack-plugin (分析loader\plugin)
+  分析包工具：webpack-bundle-analyzer
+
+
+
+
+作者：千岁吾皇
+链接：https://www.imooc.com/article/details/id/29185
+来源：慕课网
 
 ## 手写
 - 手写bind
+- 手写call
 - 手写deepClone
 - [手写new、防抖、节流、杨辉三角](http://yc-yue.top/article/50)
+- [手写promise](http://github.com/ChengYiFan/wonderland/blob/main/Code/promise.md)
 - 手写promise.all
 
 ## 算法

@@ -84,16 +84,11 @@ CDN 的使用
 
 
 
-
-作者：千岁吾皇
-链接：https://www.imooc.com/article/details/id/29185
-来源：慕课网
-
 ## 手写
-- 手写bind
-- 手写call
+- [手写call、apply、bind](http://github.com/ChengYiFan/wonderland/blob/main/Code/call.md)
+- [手写new](http://github.com/ChengYiFan/wonderland/blob/main/Code/new.md)
 - 手写deepClone
-- [手写new、防抖、节流、杨辉三角](http://yc-yue.top/article/50)
+- [手写防抖、节流、杨辉三角](http://yc-yue.top/article/50)
 - [手写promise](http://github.com/ChengYiFan/wonderland/blob/main/Code/promise.md)
 - 手写promise.all
 

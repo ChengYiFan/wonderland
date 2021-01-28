@@ -105,3 +105,7 @@ function resolvePromise(promise2, x, resolve, reject) {
 }
 
 ```
+
+### 参考
+https://zhuanlan.zhihu.com/p/144058361
+https://www.cnblogs.com/sugar-tomato/p/11353546.html

@@ -10,8 +10,8 @@
 - [函数式编程](https://github.com/ChengYiFan/wonderland/blob/main/JS/functionProgram.md)
 - [如何理解纯函数，自己怎么构建纯函数?](https://github.com/ChengYiFan/wonderland/blob/main/JS/pure-function.md)
 - [函数柯里化](https://github.com/ChengYiFan/wonderland/blob/main/JS/currying.md)
-- 原型和原型链
-- 继承
+- [原型和原型链]()
+- [继承](https://github.com/ChengYiFan/wonderland/blob/main/JS/extends.md)
 - 浅拷贝和深拷贝
 - [setTimeout和requestAnimationFrame](https://github.com/ChengYiFan/wonderland/blob/main/JS/requestAnimationFrame.md)
 - [JS事件循环](https://github.com/ChengYiFan/wonderland/blob/main/JS/eventLoop.md)

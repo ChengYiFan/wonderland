@@ -1,7 +1,10 @@
 ## 内置类型
 JS中七种内置类型，分为基本类型和对象类型。
+
 基本类型(6种)：null，undefined，boolean，number，string，symbol。
+
 其中数字类型是浮点类型的，没有整型。并且浮点类型是基于IEEE 754（双精度版本 64位）标准实现，在使用中会遇到一些 Bug。
+
 比如 0.1 + 0.2 != 0.3，原因是在这种标准下小数算二进制和整数不同，小数的表示存在精度问题。原生解决办法如下：
 ```js
 parseFloat((0.1 + 0.2).toFixed(10))
@@ -89,6 +92,7 @@ Array.isArray(arr);  // true
 
 ### 对象转基本类型
 对象在转换基本类型时，首先会调用valueOf然后再调用toString。并且这两个方法是可以重写的。
+
 也可以重写Symbol.toPrimitive，该方法在转换基本类型时，调用优先级是最高的。
 ```js
 let a = {
@@ -160,7 +164,7 @@ console.log(b.jobs.first); // native
 1. 不能序列化函数
 1. 不能解决循环引用的对象
 
-但在通常情况下，复杂数据都是可以序列化的，所以这个函数可以解决大部分问题，并且该函数是内置 函数中处理深拷贝性能最快的。如何包含以上三种情况的化，可以使用lodash的深拷贝函数。
+但在通常情况下，复杂数据都是可以序列化的，所以这个函数可以解决大部分问题，并且该函数是内置 函数中处理深拷贝性能最快的。如果包含以上三种情况的化，可以使用lodash的深拷贝函数。
 ### 手动实现一个深拷贝，实现对数组和对象的深拷贝
 ```js
 function type(obj) {
@@ -220,7 +224,18 @@ Function.prototype.myCall(obj) {
 }
 ```
 ### 模拟实现apply
-
+apply的实现思路与call类似，不同的是增加了参数的判断
+```js
+Function.prototype.myCall(obj) {
+  const context = obj || window;
+  // const args = Array.prototype.slice.call(arguments, 1);
+  context.fn = this;
+  const result = arguments[1] ? context.fn(arguments[1]) : context.fn();
+  // 删除fn
+  delete context.fn;
+  return result;
+}
+```
 ### 模拟实现bind
 该方法和其他两个方法作用一致，只是该方法返回一个函数。并且可以通过bind实现柯里化。
 ```js
@@ -286,9 +301,20 @@ Promise是ES6新增的语法，解决了回调地狱的问题。
 JS是单线程的。在JS引擎执行Node或浏览器发送过来的代码时，会顺序的把执行环境加入到执行栈中。如果遇到异步代码，会挂起并加入到Task（多个Task）队列。执行栈空闲时，从Task队列里拿出需要执行的代码放入执行栈中执行。执行完成后出栈，如此循环，即为事件循环机制。
 
 不同的任务源会被分配到不同的Task队列。
+
 可以分为宏任务和微任务。
-微任务包括： process.nextTick、promise
-宏任务：script、setTimeout、setInterval、ajax
-## 
+- 微任务包括： process.nextTick、promise、Object.observe、MutationObserver
+- 宏任务：script、setTimeout、setInterval、setImmediate、I/O、UI rendering
+
+很多人有个误区，认为微任务快于宏任务，其实是错误的。因为宏任务中包含了script。浏览器会先执行一个宏任务，接下来有异步代码的话就先执行微任务。
+
+所以正确的一次 Event loop的顺序是这样的：
+1. 执行同步代码，这属于宏任务
+1. 执行栈为空，查询是否有微任务需要执行
+1. 执行所有微任务
+1. 必要的话渲染UI
+1. 然后开始下一轮 Event loop。执行宏任务中的异步代码。
+
+通过上述的Event loop顺序可知，如果宏任务中的代码有大量的计算并且需要操作 DOM的话，为了更快的界面响应，可以把操作DOM放入微任务中。
 
 

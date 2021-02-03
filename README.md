@@ -1,25 +1,25 @@
 # my wonderland
 
-## JS
-- [this](https://github.com/ChengYiFan/wonderland/blob/main/JS/this.md)
-- [闭包，如何形成闭包](https://github.com/ChengYiFan/wonderland/blob/main/JS/closure.md)
+## [JS](https://github.com/ChengYiFan/wonderland/blob/main/JS/index.md)
+- this
+- 闭包
 - 垃圾回收机制
 - 箭头函数
-- [call、apply、bind区别](http://yc-yue.top/article/51)
-- [模块模式的理解，ES6模块模式与node.js模块模式的区别？](https://github.com/ChengYiFan/wonderland/blob/main/JS/module.md)
-- [函数式编程](https://github.com/ChengYiFan/wonderland/blob/main/JS/functionProgram.md)
-- [如何理解纯函数，自己怎么构建纯函数?](https://github.com/ChengYiFan/wonderland/blob/main/JS/pure-function.md)
-- [函数柯里化](https://github.com/ChengYiFan/wonderland/blob/main/JS/currying.md)
-- [原型和原型链]()
-- [继承](https://github.com/ChengYiFan/wonderland/blob/main/JS/extends.md)
+- call、apply、bind区别
+- 模块模式的理解，ES6模块模式与node.js模块模式的区别？
+- 函数式编程
+- 如何理解纯函数，自己怎么构建纯函数
+- 函数柯里化
+- 原型和原型链
+- 继承
 - 浅拷贝和深拷贝
-- [setTimeout和requestAnimationFrame](https://github.com/ChengYiFan/wonderland/blob/main/JS/requestAnimationFrame.md)
-- [JS事件循环](https://github.com/ChengYiFan/wonderland/blob/main/JS/eventLoop.md)
+- setTimeout和requestAnimationFrame
+- JS事件循环
 - ts解决了哪些问题？
-- [DOM 事件机制]
+- DOM 事件机制
 
 ## CSS
-- [盒模型](http://yc-yue.top/article/44)
+- 盒模型
 - BFC
 - 三栏布局
 - 媒体查询
@@ -49,7 +49,7 @@ target伪类: #more_info:target。
 - font-size: 10px如何实现
 - 移动端1px如何实现
 - 媒体查询
-- [移动端click 300ms延迟的原因？](https://github.com/ChengYiFan/wonderland/blob/main/Mobile/click300.md)
+- 移动端click 300ms延迟的原因？
 
 ## 浏览器
 - http1.1 和 http2.0的区别
@@ -60,7 +60,7 @@ target伪类: #more_info:target。
 ## 性能优化
 - 如何实现一个单点登录？
 - 项目里具体做了哪些优化？
-- [性能优化的方法]()
+- 性能优化的方法
 性能优化初步原则
 减小代码量
 减小请求数
@@ -85,19 +85,19 @@ CDN 的使用
 
 
 ## 手写
-- [手写call、apply、bind](http://github.com/ChengYiFan/wonderland/blob/main/Code/call.md)
-- [手写new](http://github.com/ChengYiFan/wonderland/blob/main/Code/new.md)
+- 手写call、apply、bind
+- 手写new
 - 手写deepClone
-- [手写防抖、节流、杨辉三角](http://yc-yue.top/article/50)
-- [手写promise](http://github.com/ChengYiFan/wonderland/blob/main/Code/promise.md)
+- 手写防抖、节流、杨辉三角
+- 手写promise
 - 手写promise.all
 
 ## 算法
-- [二分查找](https://github.com/ChengYiFan/wonderland/blob/main/Code/binary-search.md)
-- [数组去重]
+- 二分查找
+- 数组去重
 - 删除重复的字符
 - 连字符转成驼峰
-- [怎么用最优雅的方法给数字加千分位](https://github.com/ChengYiFan/wonderland/blob/main/Code/千分位.md)
+- 怎么用最优雅的方法给数字加千分位
 - 斐波那契
 - 求最大公约数
 - 验证一个数是否是素数
@@ -108,15 +108,15 @@ CDN 的使用
 - 
 
 ## React
-- [react](https://github.com/ChengYiFan/wonderland/blob/main/React/react.md)
-- [react hooks 的优点？](https://github.com/ChengYiFan/wonderland/blob/main/React/hooks.md)
-- [redux 原理，如何触发状态更新到视图？](https://github.com/ChengYiFan/wonderland/blob/main/React/redux.md)
+- react
+- react hooks 的优点？
+- redux 原理，如何触发状态更新到视图？
 - contextAPI
 
 ## 设计模式
 - 策略模式
-- [mvc、mvp、mvvm](https://github.com/ChengYiFan/wonderland/blob/main/DesignPatterns/mvc-mvp-mvvm.md)
-- [简述mvvm实现原理，并分react和vue画出流程图](https://github.com/ChengYiFan/wonderland/blob/main/DesignPatterns/mvvm.md)。
+- mvc、mvp、mvvm
+- 简述mvvm实现原理，并分react和vue画出流程图
 
 ## 工程化
 - webpack5的新特性

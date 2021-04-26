@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div id="root"></div>
+    <button onclick="click1()">btn1</button>
+    <button onclick="click2()">btn2</button>
+    <script>
+      const root = document.getElementById('root');
+      let p = Promise.resolve();
+      function sleep(t) {
+        return new Promise((resolve, reject) => {
+          setTimeout(resolve, t);
+        });
+      }
+      const click1 = () => {
+        p = p.then(() => {
+          return new Promise((resolve, reject) => {
+            sleep(2000).then(() => {
+              root.innerText = 'a';
+              resolve();
+            });
+          })
+        });
+      }
+
+      const click2 = () => {
+        p = p.then(() => {
+          return new Promise((resolve, reject) => {
+            sleep(1000).then(() => {
+              root.innerText = 'b';
+              resolve();
+            });
+          })
+        });
+      }
+        
+    </script>
+  </body>
+</html>

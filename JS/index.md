@@ -224,7 +224,7 @@ Function.prototype.myCall(obj) {
 }
 ```
 ### 模拟实现apply
-apply的实现思路与call类似，不同的是增加了参数的判断
+apply 的实现思路与call类似，不同的是增加了参数的判断
 ```js
 Function.prototype.myCall(obj) {
   const context = obj || window;
@@ -301,7 +301,6 @@ Promise是ES6新增的语法，解决了回调地狱的问题。
 JS是单线程的。在JS引擎执行Node或浏览器发送过来的代码时，会顺序的把执行环境加入到执行栈中。如果遇到异步代码，会挂起并加入到Task（多个Task）队列。执行栈空闲时，从Task队列里拿出需要执行的代码放入执行栈中执行。执行完成后出栈，如此循环，即为事件循环机制。
 
 不同的任务源会被分配到不同的Task队列。
-
 可以分为宏任务和微任务。
 - 微任务包括： process.nextTick、promise、Object.observe、MutationObserver
 - 宏任务：script、setTimeout、setInterval、setImmediate、I/O、UI rendering
@@ -318,3 +317,43 @@ JS是单线程的。在JS引擎执行Node或浏览器发送过来的代码时，
 通过上述的Event loop顺序可知，如果宏任务中的代码有大量的计算并且需要操作 DOM的话，为了更快的界面响应，可以把操作DOM放入微任务中。
 
 
+```
+setTimeout(function () {
+
+  console.log(1)
+
+}, 0);
+
+new Promise(function executor(resolve) {
+
+  console.log(2);
+
+  for (var i = 0; i < 10000; i++) {
+
+    i == 9999 && resolve();
+
+  }
+
+  console.log(3);
+
+}).then(function () {
+
+  console.log(4);
+
+});
+
+console.log(5);     // 2、3、5、4、1
+```
+
+function fn1(num) {
+    const arr = String(num).split('').reverse();
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+      result.push(arr[i]);
+      console.log(i % 3);
+      if ((i+1) % 3 === 0) result.push(',');
+    }
+    result = result.reverse();
+    console.log(result);
+    return result[0] === ',' ? result.slice(1).join('') : result.join('');
+}

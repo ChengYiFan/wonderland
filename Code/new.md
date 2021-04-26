@@ -10,7 +10,7 @@ Function.prototype.myNew = function() {
   // 拿到构造函数
   const fn = [].shift.call(arguments);
   // 生成一个新对象
-  const obj = new Object();
+  const obj = {};
   obj.__proto__ = fn.prototype;
   const result = fn.apply(obj, arguments);
   return typeof result === 'object' ? result : obj;

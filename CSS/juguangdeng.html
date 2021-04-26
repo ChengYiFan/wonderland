@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>使用css的clip-path 做一个聚光灯的效果</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Hello, world!</h2>
+      <h2>I love you.</h2>
+      <div class="circle"></div>
+    </section>
+    <script>
+      const pos = document.documentElement;
+      pos.addEventListener('mousemove', e => {
+        pos.style.setProperty('--x', e.clientX + 'px');
+        pos.style.setProperty('--y', e.clientY + 'px');
+      })
+    </script>
+  </body>
+</html>

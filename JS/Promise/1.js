@@ -1,3 +1,10 @@
+/**
+* MyPromise的初步实现
+* MyPromise对象
+* 内部状态维护
+* callback的resolve方法和reject的方法
+* then方法的初步实现
+*/
 //基础变量的定义
 const STATUS = {
   PENDING: "PENDING",
@@ -47,8 +54,6 @@ MyPromise.prototype.then = function (onFullfilled, onRejected) {
 };
 MyPromise.prototype.catch = function (onRejected) {};
 MyPromise.prototype.finally = function (onFinally) {};
-
-export default MyPromise;
 
 
 new MyPromise((res, rej) => {

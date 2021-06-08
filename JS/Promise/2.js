@@ -52,7 +52,7 @@ class MyPromise {
   any() {}
   race() {}
   resolve(value) {}
-  reject(reson) {}
+  reject(reason) {}
 }
 MyPromise.prototype.then = function (onFullfilled, onRejected) {
   let onResolve = typeof onFullfilled === 'function' ? onFullfilled : function(v) {};
